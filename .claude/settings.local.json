@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet build)",
+      "Bash(dotnet build:*)",
+      "Bash(dotnet run:*)",
+      "Bash(tasklist)",
+      "Bash(findstr:*)",
+      "Bash(dotnet clean:*)",
+      "Bash(taskkill:*)",
+      "Bash(dir)",
+      "Bash(dotnet restore:*)",
+      "Bash(dotnet ef migrations add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -64,8 +64,7 @@ namespace Web.Controllers.Implements
                 FirstName = personDto.FirstName ?? person.FirstName,
                 LastName = personDto.LastName ?? person.LastName,
                 Document = personDto.Document != 0 ? personDto.Document : person.Document,
-                PhoneNumber = personDto.PhoneNumber != 0 ? personDto.PhoneNumber : person.PhoneNumber,
-                Email = personDto.Email ?? person.Email
+                PhoneNumber = personDto.PhoneNumber != 0 ? personDto.PhoneNumber : person.PhoneNumber
             };
 
             var updated = await _personService.UpdateAsync(id, updatedPerson);

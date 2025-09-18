@@ -49,7 +49,6 @@ namespace Business.Implements
             person.LastName = personDto.LastName ?? person.LastName;
             person.Document = personDto.Document;
             person.PhoneNumber = personDto.PhoneNumber;
-            person.Email = personDto.Email ?? person.Email;
 
             var actualizado = await _personRepository.UpdateAsync(person);
             return _mapper.Map<PersonDTO>(actualizado);
